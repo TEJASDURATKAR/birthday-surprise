@@ -26,9 +26,7 @@ export default function Hero() {
           🎁 Explore the Surprise
         </Button>
 
-        <p className="scroll-hint mt-4">
-          Scroll to feel the magic ✨
-        </p>
+        
       </Container>
     </section>
   );

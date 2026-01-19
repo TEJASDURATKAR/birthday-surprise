@@ -14,7 +14,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/message" element={<Message />} />
-        <Route path="/surprise" element={<Surprise />} />
+        <Route path="/nav-surprise" element={<Surprise />} />
       </Routes>
       <Footer />
     </BrowserRouter>

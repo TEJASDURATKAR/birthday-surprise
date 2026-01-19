@@ -29,7 +29,7 @@ export default function BirthdayNavbar() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/gallery">Memories</Nav.Link>
             <Nav.Link as={Link} to="/message">Message</Nav.Link>
-            <Nav.Link as={Link} to="/surprise">Surprise 🎁</Nav.Link>
+            <Nav.Link as={Link} to="/nav-surprise">Surprise 🎁</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

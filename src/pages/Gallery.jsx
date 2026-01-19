@@ -1,10 +1,10 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 const images = [
-  { src: "https://picsum.photos/300/400?1", caption: "Sweet Moment 💖" },
-  { src: "https://picsum.photos/300/400?2", caption: "Best Smile 😊" },
-  { src: "https://picsum.photos/300/400?3", caption: "Forever Memory ✨" },
-  { src: "https://picsum.photos/300/400?4", caption: "Together Always 💑" },
+  { src: "https://images.pexels.com/photos/6841402/pexels-photo-6841402.jpeg", caption: "Sweet Moment 💖" },
+  { src: "https://images.pexels.com/photos/11783586/pexels-photo-11783586.jpeg", caption: "Best Smile 😊" },
+  { src: "https://images.pexels.com/photos/34615133/pexels-photo-34615133.jpeg", caption: "Forever Memory ✨" },
+  { src: "https://images.pexels.com/photos/3319900/pexels-photo-3319900.jpeg", caption: "Together Always 💑" },
 ];
 
 export default function Gallery() {
