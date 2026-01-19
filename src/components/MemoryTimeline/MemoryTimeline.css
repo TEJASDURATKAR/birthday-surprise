@@ -1,0 +1,138 @@
+.timeline-section {
+  padding: 100px 20px;
+  background: linear-gradient(
+    180deg,
+    #f8f7ff,
+    #e6e6fa
+  );
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #7c3aed;
+  margin-bottom: 60px;
+  text-shadow: 0 0 18px rgba(139, 92, 246, 0.4);
+}
+
+/* TIMELINE WRAPPER */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #c4b5fd,
+    #8b5cf6
+  );
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* ITEM */
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* ICON */
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #a78bfa
+  );
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+  animation: pulse 2s infinite;
+}
+
+/* CARD */
+.timeline-card {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(139, 92, 246, 0.25);
+  transition: all 0.4s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 65px rgba(139, 92, 246, 0.45);
+}
+
+.timeline-card h4 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #6d28d9;
+  margin-bottom: 8px;
+}
+
+.timeline-card p {
+  font-size: 0.95rem;
+  color: #4c1d95;
+  margin: 0;
+}
+
+/* Left / Right alignment */
+.timeline-item:nth-child(odd) .timeline-card {
+  margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-card {
+  margin-right: auto;
+}
+
+/* ANIMATION */
+@keyframes pulse {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.1); }
+  100% { transform: translateX(-50%) scale(1); }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  .timeline-icon {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-card {
+    width: 100%;
+  }
+}

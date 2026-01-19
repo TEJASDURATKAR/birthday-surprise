@@ -1,0 +1,43 @@
+.surprise-section {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #f8f7ff, #e6e6fa);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2); /* soft purple shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.surprise-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(138, 43, 226, 0.3);
+}
+
+.surprise-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4b0082; /* deep purple */
+  margin-bottom: 20px;
+}
+
+.surprise-text {
+  font-size: 1.2rem;
+  color: #6a5acd; /* medium lavender */
+  margin-bottom: 35px;
+}
+
+.surprise-btn {
+  background: #dda0dd; /* plum */
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.surprise-btn:hover {
+  background: #ba55d3; /* darker plum */
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
+}

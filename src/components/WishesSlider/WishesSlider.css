@@ -1,0 +1,40 @@
+.wishes-section {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f8f7ff, #e6e6fa);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wishes-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(138, 43, 226, 0.3);
+}
+
+.wishes-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4b0082; /* deep purple */
+  margin-bottom: 20px;
+}
+
+.wishes-carousel {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wishes-text {
+  font-size: 1.3rem;
+  color: #6a5acd; /* medium lavender */
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.wishes-text:hover {
+  transform: scale(1.05);
+}

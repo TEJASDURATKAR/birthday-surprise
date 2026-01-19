@@ -1,0 +1,114 @@
+/* Section Background */
+.birthday-message-section {
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating background hearts */
+.birthday-message-section::before {
+  content: "💜 💖 ✨ 💫";
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-size: 5rem;
+  opacity: 0.05;
+  transform: rotate(-10deg);
+}
+
+/* Card */
+.birthday-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 28px;
+  padding: 50px 40px;
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(139, 92, 246, 0.25);
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+/* Floating heart */
+.floating-heart {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  font-size: 2.5rem;
+  animation: floatHeart 3s ease-in-out infinite;
+}
+
+/* Title */
+.birthday-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #6d28d9;
+  margin-bottom: 20px;
+}
+
+.birthday-title span {
+  animation: pulse 2s infinite;
+}
+
+/* Text */
+.birthday-text {
+  font-size: 1.15rem;
+  color: #4c1d95;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+}
+
+.birthday-text.extra {
+  margin-top: 15px;
+  color: #5b21b6;
+}
+
+/* Button */
+.lavender-btn {
+  background: linear-gradient(135deg, #8b5cf6, #c084fc);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 12px 35px rgba(139, 92, 246, 0.5);
+  transition: all 0.4s ease;
+}
+
+.lavender-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 20px 55px rgba(139, 92, 246, 0.8);
+}
+
+/* Animations */
+@keyframes floatHeart {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .birthday-title {
+    font-size: 2rem;
+  }
+
+  .birthday-card {
+    padding: 35px 25px;
+  }
+}

@@ -1,0 +1,91 @@
+.countdown-section {
+  padding: 90px 20px;
+  background: linear-gradient(
+    180deg,
+    #f5f3ff,
+    #ede9fe
+  );
+  text-align: center;
+}
+
+.countdown-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #6d28d9;
+  margin-bottom: 40px;
+  text-shadow: 0 0 18px rgba(139, 92, 246, 0.35);
+}
+
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* COUNT BOX */
+.count-box {
+  width: 130px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+
+.count-box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(139, 92, 246, 0.45);
+}
+
+.count-number {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #7c3aed;
+}
+
+.count-label {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #4c1d95;
+}
+
+/* BIRTHDAY MESSAGE */
+.birthday-live {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #8b5cf6;
+  animation: pulse 1.5s infinite;
+}
+
+/* ANIMATION */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .count-box {
+    width: 110px;
+    height: 110px;
+  }
+
+  .countdown-title {
+    font-size: 2rem;
+  }
+}
